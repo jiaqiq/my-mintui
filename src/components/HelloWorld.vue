@@ -5,6 +5,9 @@
     <div class="box3">{{msg}}</div>
     <div class="box4">{{msg}}</div>
     <div class="box5">{{msg}}</div>
+    this is 欢迎页
+    <mt-button type="primary" @click="goHome">去首页</mt-button>
+    <router-link to="/home">Go to Home</router-link>
   </div>
 </template>
 
@@ -13,7 +16,12 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Vue'
+    }
+  },
+  methods: {
+    goHome() {
+      this.$router.push('home');
     }
   }
 }
