@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import home from '@/components/pages/home'
 import lazyLoad from '@/components/pages/lazyLoad'
+import swipe from '@/components/pages/swipe'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/lazyLoad',
       name: 'lazyLoad',
       component: lazyLoad
+    },
+    {
+      path: '/swipe',
+      name: 'swipe',
+      component: swipe
     }
   ]
 })
