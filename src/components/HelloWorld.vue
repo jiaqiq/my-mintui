@@ -7,6 +7,7 @@
     <div class="box5">{{msg}}</div>
     this is 欢迎页
     <mt-button type="primary" @click="goHome">去首页</mt-button>
+    <mt-button type="primary" @click="lazyLoad">懒加载</mt-button>
     <router-link to="/home">Go to Home</router-link>
   </div>
 </template>
@@ -22,6 +23,9 @@ export default {
   methods: {
     goHome() {
       this.$router.push('home');
+    },
+    lazyLoad() {
+      this.$router.push('lazyLoad');
     }
   }
 }

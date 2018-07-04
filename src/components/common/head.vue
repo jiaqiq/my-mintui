@@ -17,6 +17,14 @@
 
 <script>
 export default {
+    props: {
+        title1: String
+    },
+    watch: {
+        tilte1: function(val) {
+            this.heading.title = val;
+        }
+    },
     data() {
         return {
             heading: {
